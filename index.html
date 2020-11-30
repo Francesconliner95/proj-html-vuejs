@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="12bool.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" charset="utf-8"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id=root>
+            <header>
+                <div class="container">
+                    <div class="header-top">
+                        <div class="header-top-left">
+                            <img src="images/dark-logo.png" alt="">
+                        </div>
+                        <div class="header-top-right">
+                            <div class="nav">
+                                <a href="#" v-for="item in nav_items">
+                                    {{item}}
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                            </div>
+                            <div class="search-cont">
+                                <i class="fas fa-shopping-cart">
+                                    <span>0</span>
+                                </i>
+                                <i class="far fa-user-circle"></i>
+                                <input type="text" name="" value="" placeholder="  Search...">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-bottom">
+
+                    </div>
+                </div>
+            </header>
+        </div>
+        <script src="main.js" charset="utf-8"></script>
+    </body>
+</html>
