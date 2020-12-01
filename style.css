@@ -53,6 +53,7 @@ button{
     color: white;
     border: none;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 button:hover{
@@ -408,4 +409,57 @@ h2>span{
 .prices button{
     padding: 15px 70px;
     font-size: 15px;
+}
+
+
+/*LEARN*/
+
+.learn{
+    padding: 80px 0;
+}
+
+.learn .pace,
+.learn .mobile{
+    padding: 50px 0;
+    display:flex;
+    justify-content: space-between;
+}
+
+.mobile-left,
+.pace-left{
+    width: 50%;
+}
+
+.pace-right{
+    width: 50%;
+}
+
+
+.pace-left i{
+    color: #22ad96;
+}
+
+.mobile-right,
+.pace-left h2{
+    padding-right: 300px;
+    margin: 20px 0;
+}
+
+.mobile-right,
+.pace-left p{
+    padding: 10px 0;
+}
+
+.mobile-right button,
+.pace-left button{
+    margin: 25px 0;
+    padding: 20px 45px;
+}
+
+.mobile-right{
+    width: 45%;
+}
+
+.mobile-left h2{
+    margin: 20px 0;
 }
