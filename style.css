@@ -16,8 +16,25 @@ h2{
 
 p{
     font-size: 17px;
-    color: #b6b8d1;
+    /* color: #b6b8d1; */
+    color: #959999;
     padding: 20px 0;
+}
+
+.text_white{
+    color: white;
+}
+
+.text_gray{
+    color: #959999;
+}
+
+.text_green{
+    color: #22ad96;
+}
+
+.text_min{
+    font-size: 16px;
 }
 
 button{
@@ -82,6 +99,7 @@ header{
     align-items: center;
     color: #513e5e;
     text-decoration: none;
+    font-weight: 500;
 }
 .nav>a:hover{
     opacity: 0.8;
@@ -157,4 +175,133 @@ i.fa-search{
 
 .header-bottom-right img{
     width: 100%;
+}
+
+
+/*TARGET*/
+
+.targets{
+    text-align: center;
+    background-color: #fefefe;
+}
+
+h2>span{
+    color: #22ad96;
+}
+
+.categories{
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category{
+    /* background-color: red; */
+    width: 25%;
+    height: 350px;
+    padding: 0 10px;
+}
+
+.img-cont{
+    width: 100%;
+    height: 200px;
+}
+
+.category img{
+    height: 80%;
+    /* width: 50%; */
+}
+
+.category>a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #959999;
+}
+
+.category>a:hover{
+    opacity: .8;
+}
+
+.career-prospective{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.career-prospective>div>div{
+    box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.2);
+    margin: 30px 0;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.career-prospective-right{
+    width: 600px;
+}
+
+.career-prospective-right i{
+    font-size: 20px;
+}
+
+.career-prospective-right i:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+
+.Platform-Supported{
+    margin-top: 30px;
+    /* width: 80%; */
+    /* background-color: blue; */
+}
+
+.Platform-Supported-header{
+    font-weight: bold;
+    color: white;
+    background-color: #22ad96;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.Platform-Supported-header,
+.multiple-course,
+.sudy-progress{
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+.Platform-Supported-main{
+    padding: 0 20px;
+    /* background-color: yellow; */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/*STATISTICS*/
+
+.statistics{
+    height: 200px;
+    background-color: #f0efef;
+}
+
+.statistics .container{
+    height: 100%;
+
+}
+
+.statistics .row{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: yellow; */
+    align-items: center;
+}
+
+.statistics>.container>div{
+    text-align: center;
 }
