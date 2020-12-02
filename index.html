@@ -130,19 +130,19 @@
                     <div class="row">
                         <div class="">
                             <h2 class="text_green">1.926</h2>
-                            <p class="text_gray">FINISHED SESSIONS</p>
+                            <p class="text_violet font-bold">FINISHED SESSIONS</p>
                         </div>
                         <div class="">
                             <h2 class="text_green">3.092+</h2>
-                            <p class="text_gray">ENROLLED LEARNERS</p>
+                            <p class="text_violet  font-bold">ENROLLED LEARNERS</p>
                         </div>
                         <div class="">
                             <h2 class="text_green">200</h2>
-                            <p class="text_gray">ONLINE INSTRUCTORS</p>
+                            <p class="text_violet  font-bold">ONLINE INSTRUCTORS</p>
                         </div>
                         <div class="">
                             <h2 class="text_green">100%</h2>
-                            <p class="text_gray">SATISFACTION RATE</p>
+                            <p class="text_violet  font-bold">SATISFACTION RATE</p>
                         </div>
                     </div>
                 </div>
@@ -460,21 +460,21 @@
                             <img src="images/testimonial-avata-02.jpg" alt="">
                             <p class="text-bold">I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.</p>
                             <p class="text-bold text-black">MINA HOLLANCE</p>
-                            <p class="text_min">/ freelancer</p>
+                            <p>/ Freelancer</p>
                         </div>
                         <div class="slide">
                             <img src="images/testimonial-avata-04.jpg" alt="">
                             <p class="text-bold">
-                            MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.				</p>
+                            MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.		</p>
                             <p class="text-bold text-black">MADLEY PONDOR</p>
-                            <p class="text_min">/ IT Specialist</p>
+                            <p>/ IT Specialist</p>
                         </div>
                         <div class="slide">
                             <img src="images/testimonial-avata-01.jpg" alt="">
                             <p class="text-bold">
                             I am happy with their arrangement of lessons and subjects. They reflect a scientific  investigation.</p>
                             <p class="text-bold text-black">LUVIC DUBBLE</p>
-                            <p class="text_min">/ Private Tutor</p>
+                            <p>/ Private Tutor</p>
                         </div>
                     </div>
                     <div class="selector">
@@ -488,6 +488,33 @@
                     </div>
                 </div>
             </section>
+            <footer>
+                <div class="container">
+                    <div class="footer-row">
+                        <div class="footer-left">
+                            <div class="address">
+                                <h4>{{Object.keys(footer_items)[0]}}</h4>
+                                <p class="text_gray" v-for="items in  footer_items.address">{{items}}</p>
+                                <i v-for="item in socials" class="fab text_gray" :class="item"></i>
+                            </div>
+                        </div>
+                        <div class="footer-right">
+                            <div class="explore">
+                                <h4>{{Object.keys(footer_items)[1]}}</h4>
+                                <div class="explore-list">
+                                    <a href="#" class="text_gray" v-for="items in  footer_items.explore">{{items}}</a>
+                                </div>
+                            </div>
+                            <div class="information">
+                                <h4>{{Object.keys(footer_items)[2]}}</h4>
+                                <a href="#" class="text_gray" v-for="items in  footer_items.information">{{items}}</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p>© 2020 Maxcoach. All Rights Reserved</p>
+                </div>
+            </footer>
         </div>
         <script src="main.js" charset="utf-8"></script>
     </body>
