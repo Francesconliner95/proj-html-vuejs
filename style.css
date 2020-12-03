@@ -482,18 +482,22 @@ i.fa-search{
 
 .learn .pace,
 .learn .mobile{
-    padding: 50px 0;
-    display:flex;
-    justify-content: space-between;
+    /* padding: 100px 0; */
+    content: "";
+    display: table;
+    clear: both;
+
 }
 
 .mobile-left,
 .pace-left{
     width: 50%;
+    padding-bottom: 50px;
 }
 
 .pace-right{
     width: 50%;
+    padding-bottom: 50px;
 }
 
 
@@ -521,6 +525,7 @@ i.fa-search{
 
 .mobile-right{
     width: 45%;
+    padding-bottom: 50px;
 }
 
 .mobile-left h2{
@@ -535,14 +540,14 @@ i.fa-search{
 }
 
 .events-list{
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .event{
-    width: 49%;
-    height: 180px;
+    width: 95%;
+    min-height: 180px;
     background-color: #f8f8f8;
     margin: 20px 0;
     border-radius: 8px;
@@ -617,13 +622,18 @@ i.fa-search{
 .slider{
     margin-top: 150px;
     margin-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
+    content: "";
+    display: table;
+    clear: both;
+}
+.slide-cont{
+    padding: 50px 0;
 }
 
 .slide{
-    width: 32%;
-    height: 350px;
+    margin: 0 auto;
+    width: 95%;
+    min-height: 350px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.1);
@@ -686,8 +696,7 @@ i.fa-search{
 /*FOOTER*/
 
 footer{
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 50px 0;
 }
 
 footer h4{
@@ -698,16 +707,21 @@ footer h4{
 footer>.container>p{
     text-align: center;
     padding-top: 80px;
+    font-size: 14px;
 }
 
 .footer-row{
     /* background-color: yellow; */
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
+    content: "";
+    display: table;
+    clear: both;
+
 }
 
 .footer-left{
-    /* background-color: blue; */
+    padding-top: 50px;
 }
 
 .footer-left p{
@@ -722,7 +736,8 @@ footer>.container>p{
 }
 
 .footer-right{
-    width: 45%;
+    padding-top: 50px;
+    width: 55%;
     display: flex;
     justify-content: space-between;
     /* background-color: red; */
@@ -730,11 +745,12 @@ footer>.container>p{
 
 .explore,
 .information{
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
 
 .information{
     width: 400px;
+    padding-left: 50px;
     margin-right: 100px;
     /* background-color: magenta; */
 }
@@ -754,19 +770,19 @@ footer>.container>p{
 
 .footer-right a{
     display: block;
-    padding: 10px;
+    padding: 10px 0;
     text-decoration: none;
     font-size: 14px;
-    /* font-weight: bold; */
 }
 
-.footer-right h4{
-
-    padding-left: 10px;
-
+.footer-right a:hover{
+    color: #22ad96;
 }
 
-
+.footer-left i:hover{
+    color: #22ad96;
+    cursor: pointer;
+}
 /********************************/
 /**********MEDIA QUERY***********/
 /********************************/
