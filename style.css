@@ -107,10 +107,13 @@ button:hover{
     background-color: #504b71;
 }
 
+/*HEADER*/
+
 header{
     width: 100%;
-    height: 650px;
+    /* height: 650px; */
     background-color: #f0efef;
+    padding-bottom: 100px;
 }
 
 .header-top{
@@ -133,8 +136,7 @@ header{
 }
 
 .header-top-right{
-    /* background-color: red; */
-    width: 900px;
+    width: auto;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -143,7 +145,7 @@ header{
 .nav{
     width: 600px;
     height: 100%;
-    display: flex;
+    display: none;
     justify-content: space-between;
 }
 
@@ -170,7 +172,7 @@ i.fa-chevron-down{
 .search-cont{
     width: 300px;
     padding-left: 20px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     position: relative;
@@ -215,8 +217,22 @@ i.fa-search{
     color: #22ad96;
 }
 
-.header-bottom{
+.hamburger-menu{
+    color: #22ad96;
+    font-size: 30px;
+    width: 70px;
+    height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-menu:hover{
+    cursor: pointer;
+}
+
+.header-bottom{
+    display: block;
     justify-content: space-between;
 }
 
@@ -226,8 +242,10 @@ i.fa-search{
 }
 
 .header-bottom-right{
-    width: 450px;
+    width: 500px;
     padding-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .header-bottom-right img{
@@ -244,14 +262,11 @@ i.fa-search{
 
 .categories{
     width: 100%;
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-between;
+    padding: 30px 0;
+    display: inline-block;
 }
 
 .category{
-    /* background-color: red; */
-    width: 25%;
     height: 350px;
     padding: 0 10px;
 }
@@ -277,9 +292,10 @@ i.fa-search{
 }
 
 .career-prospective{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 60px;
+    padding: 60px 0;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .career-prospective>div>div{
@@ -338,29 +354,25 @@ i.fa-search{
 /*STATISTICS*/
 
 .statistics{
+    width: 100%;
     height: 200px;
     background-color: #f0efef;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .statistics .container{
     height: 100%;
-
 }
 
 .statistics .row{
     height: 100%;
-    display: flex;
-    justify-content: space-between;
-    /* background-color: yellow; */
-    align-items: center;
 }
 
 .statistics>.container>div{
     text-align: center;
-}
-
-.statistics p{
-
+    padding-top: 40px;
 }
 
 /*STATISTICS*/
@@ -371,16 +383,20 @@ i.fa-search{
 }
 
 .cards{
-    display: flex;
+    width: 100%;
+    /* display: flex; */
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 50px 0;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .card{
-    width: 32%;
+    width: 90%;
     height: 450px;
-    margin: 15px 0;
+    margin: 15px 15px;
     /* background-color: red; */
     border-radius: 10px;
     text-align: left;
@@ -397,6 +413,7 @@ i.fa-search{
 
 .card-top>img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
@@ -746,5 +763,49 @@ footer>.container>p{
 .footer-right h4{
 
     padding-left: 10px;
+
+}
+
+
+/********************************/
+/**********MEDIA QUERY***********/
+/********************************/
+/*SMALL*/
+@media all and (min-width: 577px){
+
+}
+
+/*MEDIUM*/
+@media all and (min-width: 769px) {
+
+    .search-cont{
+        display: flex;
+    }
+
+    .header-bottom{
+        display: flex;
+    }
+
+}
+
+/*LARGE*/
+@media all and (min-width: 993px){
+
+    .header-top-right{
+        width: 900px;
+    }
+
+    .nav{
+        display: flex;
+    }
+    .hamburger-menu{
+        display: none;
+    }
+
+}
+
+
+/*VERY LARGE*/
+@media all and (min-width: 1201px){
 
 }
